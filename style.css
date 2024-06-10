@@ -1,0 +1,268 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: Lato, sans-serif;
+    color: #222;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+header.main-header {
+    background: url('Header.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    color: whitesmoke;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #007bff;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+.navbar .navbar-nav > li > a {
+    color: white !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-brand:hover {
+    color: lightgray !important;
+}
+
+.navbar-toggle {
+    border: none;
+    background: none;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-collapse.collapse {
+    background-color: #007bff;
+}
+
+
+#brand {
+    margin-right: auto; /* Push brand to the left */
+}
+
+
+.hero-section {
+   /*background-color: beige; */
+    color: white;
+    text-align: center;
+    padding: 180px 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    color: white;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.hero-background-image img{
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: -1;
+}
+.container {
+    padding: 60px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.skills-grid, .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill-item, .project-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    flex: 0 1 calc(33% - 40px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* Fade-in effect when the element becomes visible */
+
+
+.skill-item:hover, .project-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+footer.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Animation Styles */
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .skills-grid, .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item, .project-item {
+        flex: 1 0 100%;
+    }
+}
+
+/*Navigation bar*/

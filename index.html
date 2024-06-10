@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyd Navi's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    #about h2{
+        text-align: left;
+      }
+      #about p{
+        text-align: left;
+      }
+      #skills{
+        background-color: #f9f9f9;
+        width: 100%;
+      }
+      #contact{
+        background-color:  #f9f9f9;
+        width: 100%;
+      }
+      #contact .glyphicon {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #0070F0; 
+     }
+     .social-icon {
+            font-size: 40px; /* Adjust the size as needed */
+            width: 40px;    /* Ensure the width and height are equal for a square icon */
+            height: 40px;
+            line-height: 40px; /* Vertically center the icon */
+            text-align: center; /* Center the icon horizontally */
+            margin: 0 10px; /* Space between icons */
+            color: #3b5998; /* Set a color (optional) */
+        }
+    .fa-twitter{
+        color: #0070F0;
+    }
+    .fa-linkedin{
+        color: white;
+    }
+    .fa-github{
+        color: green;
+    }
+</style>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <header class="main-header">
+        <h1>Welcome to My Creative Space</h1>
+        <p>Showcasing my skills and projects</p>
+    </header>
+
+    <!-- Updated Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">Keyd Navi</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-background-image">
+            <img src="hero1.jpg" alt="wallpaper">
+            <div class="hero-content">
+                <h2>Making idea's into reality</h2>
+                <p>Delivering quality at the best price</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Welcome to Keyd Navi's haven, where innovation meets expertise in the realm of 
+          web development and software engineering. 
+          I am a seasoned developer with a passion for crafting seamless digital experiences.</p>
+          <br>
+        <h2>My Mission</h2>
+        <p>My mission is to empower individuals and businesses with robust, user-friendly digital solutions that drive growth and success.</p>
+        <a href="About.html" class="btn">Learn More About Me</a>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="slideanim">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Front-End Development</h3>
+                    <p>HTML, CSS, JavaScript, Bootstrap</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Software Development</h3>
+                    <p>C#, MySQL, MS SQL Server</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Other Skills</h3>
+                    <p>UI/UX Design, Project Management</p>
+                </div>
+            </div>
+        </section>
+    
+        </div>
+        
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="slideanim">
+            <div class="projects-grid">
+                <!-- Example project -->
+                <div class="project-item">
+                    <h3>Project Title</h3>
+                    <img src="project1.jpg" alt="Project Image" />
+                    <p>Brief description of the project and the technologies used.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>LoanNow</h3>
+                    <img src="LoanNow.png" alt="LoanNow Image" />
+                    <br>
+                    <br>
+                    <p>LoanNow is a web-based platform where you can loan money.</p>
+                    <a href="https://netherbrick7.github.io/loan/index.html" class="btn" target="_blank">View Project</a>
+                </div>
+                <!-- Add more projects similarly -->
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>I'm available for freelance work and collaboration. Reach out to me for inquiries or just to say hi!</p>
+        <div class="contact-info">
+            <p><span class="glyphicon glyphicon-map-marker"></span>Tananaun City, Batangas, Philippines</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +63 971-1567-167</p>
+            <p><span class="glyphicon glyphicon-envelope"></span><a href="emailto:keyd@gmail.com"> keyd@gmail.com</a></p>
+        </div>
+        <form  action="https://formspree.io/f/mdoqrqdw" method="POST" id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="form-response"></p>
+    </section>
+
+    <footer class="footer">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+        <p>© 2024 Keyd Navi. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" class="social-icon"><i class="fa fa-facebook"></i></a>
+            <a href="404.html" class="social-icon"><i class="fa fa-twitter"></i></a>
+            <a href="404.html" class="social-icon"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/netherbrick7" class="social-icon"><i class="fa fa-github"></i></a>
+        </div>
+    </footer>
+    <!-- Ensure these scripts are included for Bootstrap functionality -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
