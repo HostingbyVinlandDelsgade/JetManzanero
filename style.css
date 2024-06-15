@@ -47,6 +47,7 @@ header p {
     border: none;
     margin: 0;
     border-radius: 0;
+    top: 0;
 }
 
 .navbar .navbar-brand {
