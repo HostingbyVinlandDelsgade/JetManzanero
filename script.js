@@ -77,3 +77,7 @@ $(document).ready(function () {
       } // End if
     });
 });
+
+function showAlert(){
+    alert("Can't view at the moment")
+}
