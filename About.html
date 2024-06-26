@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,42 +17,43 @@
         }
 
         .navbar {
-    background-color: #007bff;
-    border: none;
-    margin: 0;
-    border-radius: 0;
-}
+            background-color: #007bff;
+            border: none;
+            margin: 0;
+            border-radius: 0;
+        }
 
-.navbar .navbar-brand {
-    color: white !important;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 15px 20px;
-}
+        .navbar .navbar-brand {
+            color: white !important;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 15px 20px;
+        }
 
-.navbar .navbar-nav > li > a {
-    color: white !important;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: 15px 20px;
-}
+        .navbar .navbar-nav>li>a {
+            color: white !important;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding: 15px 20px;
+        }
 
-.navbar .navbar-nav > li > a:hover, .navbar .navbar-brand:hover {
-    color: lightgray !important;
-}
+        .navbar .navbar-nav>li>a:hover,
+        .navbar .navbar-brand:hover {
+            color: lightgray !important;
+        }
 
-.navbar-toggle {
-    border: none;
-    background: none;
-}
+        .navbar-toggle {
+            border: none;
+            background: none;
+        }
 
-.navbar-toggle .icon-bar {
-    background-color: white;
-}
+        .navbar-toggle .icon-bar {
+            background-color: white;
+        }
 
-.navbar-collapse.collapse {
-    background-color: #007bff;
-}
+        .navbar-collapse.collapse {
+            background-color: #007bff;
+        }
 
 
         .container {
@@ -63,7 +65,9 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #333;
         }
 
@@ -86,12 +90,12 @@
             margin-bottom: 10px;
         }
 
-        .contact-info{
+        .contact-info ul{
             display: flex;
         }
 
-        .contact-info p{
-            padding-left: 30px;
+        .contact-info li {
+            padding-right: 30px;
         }
 
         .skills-list {
@@ -104,7 +108,8 @@
             color: #333;
         }
 
-        .experience-item, .project-item {
+        .experience-item,
+        .project-item {
             margin-bottom: 20px;
         }
 
@@ -130,22 +135,30 @@
         }
 
         .social-icon {
-            font-size: 40px; /* Adjust the size as needed */
-            width: 40px;    /* Ensure the width and height are equal for a square icon */
+            font-size: 40px;
+            /* Adjust the size as needed */
+            width: 40px;
+            /* Ensure the width and height are equal for a square icon */
             height: 40px;
-            line-height: 40px; /* Vertically center the icon */
-            text-align: center; /* Center the icon horizontally */
-            margin: 0 10px; /* Space between icons */
-            color: #3b5998; /* Set a color (optional) */
+            line-height: 40px;
+            /* Vertically center the icon */
+            text-align: center;
+            /* Center the icon horizontally */
+            margin: 0 10px;
+            /* Space between icons */
+            color: #3b5998;
+            /* Set a color (optional) */
         }
-        .fa-twitter{
+
+        .fa-twitter {
             color: #0070F0;
         }
-        .fa-github{
+
+        .fa-github {
             color: green;
         }
 
-        .glyphicon{
+        .glyphicon {
             color: #0070F0;
         }
 
@@ -172,90 +185,97 @@
             width: 24px;
             height: 24px;
         }
-
-
+        @media screen and (max-width: 768px) {
+            .contact-info ul {
+                display: grid;
+            }
+        }
     </style>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand" href="index.html">Jet Manzanero</a>
-            </div>
+            <a class="navbar-brand" href="index.html">Jet Manzanero</a>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
         </div><!-- /.container-fluid -->
     </nav>
-<div class="container">
-    <h1>Jet Manzanero</h1>
-    <h2>Software and Web developer</h2>
-    <h3>Contact</h3>
-    <div class="contact-info">
-        <p><span class="glyphicon glyphicon-phone"></span> +63 976-039-9907</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> sutjeskamanzanerogmail.com</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Batangas, Philippines</p>
-    </div>
-    <h2>Skills Summary:</h2>
-    <ul class="skills-list">
-        <li>Proficient in front-end web development technologies including HTML5, CSS3, JavaScript, and Bootstrap.</li>
-        <!--<li>Experienced in back-end development with C#, SQL, and MySQL.</li>
+    <div class="container">
+        <h1>Jet Manzanero</h1>
+        <h2>Software and Web developer</h2>
+        <h3>Contact</h3>
+        <div class="contact-info">
+            <ul>
+                <li><span class="glyphicon glyphicon-phone"></span> +63 976-039-9907</li>
+                <li><span class="glyphicon glyphicon-envelope"></span> sutjeskamanzanero@gmail.com</li>
+                <li><span class="glyphicon glyphicon-map-marker"></span> Batangas, Philippines</li>
+            </ul>
+        </div>
+        <h2>Skills Summary:</h2>
+        <ul class="skills-list">
+            <li>Proficient in front-end web development technologies including HTML5, CSS,<!-- JavaScript,--> and Bootstrap.
+            </li>
+            <!--<li>Experienced in back-end development with C#, SQL, and MySQL.</li>
         <li>Skilled in creating responsive and user-friendly web interfaces.</li>-->
-        <!--<li>Strong problem-solving abilities and attention to detail.</li>-->
-        <li>Ability to work both independently and collaboratively in team environments.</li>
-        <!--<li>Familiarity with version control systems such as Git.</li>
+            <!--<li>Strong problem-solving abilities and attention to detail.</li>-->
+            <li>Ability to work both independently and collaboratively in team environments.</li>
+            <!--<li>Familiarity with version control systems such as Git.</li>
         <li>Excellent communication skills for effective collaboration with team members and clients.</li>-->
 
-        <li>HTML5 <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></li>
-        <li>CSS <span class="star-rating">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
-        <li>JavaScript <span class="star-rating">&#9733;&#9734;&#9734;&#9734;&#9734;</span></li>
-        <li>Bootstrap <span class="star-rating">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-        <!--<li>Responsive Web Design <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></li>-->
-    </ul>
+            <li>HTML5 <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></li>
+            <li>CSS <span class="star-rating">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
+            <li>JavaScript <span class="star-rating">&#9733;&#9734;&#9734;&#9734;&#9734;</span></li>
+            <li>Bootstrap <span class="star-rating">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+            <!--<li>Responsive Web Design <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></li>-->
+        </ul>
 
-    <h2>Technical Skills:</h2>
-    <h3>Front-end Development:</h3>
-    <ul class="skills-list">
-        <li>HTML5</li>
-        <li>CSS</li>
-        <!--<li>JavaScript</li>-->
-        <li>Bootstrap</li>
-        <!--<li>Responsive Web Design</li>-->
-    </ul>
+        <h2>Technical Skills:</h2>
+        <h3>Front-end Development:</h3>
+        <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <!--<li>JavaScript</li>-->
+            <li>Bootstrap</li>
+            <!--<li>Responsive Web Design</li>-->
+        </ul>
 
-    <h3>Software Development:</h3>
-    <ul class="skills-list">
-        <li>C#</li>
-        <li>Microsoft SQL Server</li>
-        <li>MySQL</li>
-        <!--<li>RESTful APIs</li>
+        <h3>Software Development:</h3>
+        <ul class="skills-list">
+            <li>C#</li>
+            <li>Microsoft SQL Server</li>
+            <li>MySQL</li>
+            <!--<li>RESTful APIs</li>
         <li>ASP.NET</li>-->
-    </ul>
+        </ul>
 
-    <h3>Other Skills:</h3>
-    <ul class="skills-list">
-        <!--<li>Version Control: Git</li>
+        <h3>Other Skills:</h3>
+        <ul class="skills-list">
+            <!--<li>Version Control: Git</li>
         <li>Debugging and Troubleshooting</li>
         <li>Agile Methodologies</li>-->
-        <li>Software Testing</li>
-        <li>User Interface Design</li>
-        <li>Project Management</li>
-        <li>SAP Business One</li>
-        <li>Inventory Clerk</li>
+            <li>Software Testing</li>
+            <li>User Interface Design</li>
+            <li>Project Management</li>
+            <li>SAP Business One</li>
+            <li>Inventory Clerk</li>
 
-    </ul>
-
-    <h2>Experience:</h2>
-    <div class="experience-item">
-        <h3>Inventory Clerk(Intern)</h3>
-        <ul>
-            <li>Assign to monitor stocks of the warehouse</li>
-            <li>Conduct Inventory Counting along with supervisors</li>
         </ul>
-    </div>
 
-    <!--<div class="experience-item">
+        <h2>Experience:</h2>
+        <div class="experience-item">
+            <h3>Inventory Clerk(Intern)</h3>
+            <ul>
+                <li>Assign to monitor stocks of the warehouse</li>
+                <li>Conduct Inventory Counting along with supervisors</li>
+            </ul>
+        </div>
+
+        <!--<div class="experience-item">
         <h3>Junior Software Developer | XYZ Tech Solutions (2019 - Present)</h3>
         <ul>
             <li>Collaborated with cross-functional teams to develop and maintain web applications using HTML, CSS, JavaScript, and Bootstrap.</li>
@@ -276,18 +296,19 @@
         </ul>
     </div>-->
 
-    <h2>Education:</h2>
-    <p>Bachelor of Science in information Technology | STI College Tanauan (2022 - 2022)</p>
-    <p>Relevant coursework: Web Development, Database Management, Software <!--Engineering, Algorithms.-->Development</p>
+        <h2>Education:</h2>
+        <p>Bachelor of Science in information Technology | STI College Tanauan (2022 - 2022)</p>
+        <p>Relevant coursework: Web Development, Database Management, Software
+            <!--Engineering, Algorithms.-->Development</p>
 
-    <h2>Projects:</h2>
-    <div class="project-item">
-        <h4>LoanNow</h4>
-        <ul>
-            <li>Develop a landpage interfaces using HTML, CSS, Bootsrap</li>
-        </ul>
-    </div>
-    <!--<div class="project-item">
+        <h2>Projects:</h2>
+        <div class="project-item">
+            <h4>LoanNow</h4>
+            <ul>
+                <li>Develop a landpage interfaces using HTML, CSS, Bootsrap</li>
+            </ul>
+        </div>
+        <!--<div class="project-item">
         <h4>E-Commerce Website</h4>
         <ul>
             <li>Developed a fully functional e-commerce website using HTML, CSS, JavaScript, Bootstrap, C#, and SQL.</li>
@@ -295,15 +316,17 @@
         </ul>
     </div>-->
 
-    <div class="project-item">
-        <h4>Portfolio Website</h4>
-        <ul>
-            <li>Designed and developed a personal portfolio website showcasing skills, projects, and contact information.</li>
-            <li>Utilized HTML, CSS, <!--JavaScript,--> and Bootstrap to create a visually appealing and responsive design.</li>
-        </ul>
-    </div>
+        <div class="project-item">
+            <h4>Portfolio Website</h4>
+            <ul>
+                <li>Designed and developed a personal portfolio website showcasing skills, projects, and contact
+                    information.</li>
+                <li>Utilized HTML, CSS, <!--JavaScript,--> and Bootstrap to create a visually appealing and responsive
+                    design.</li>
+            </ul>
+        </div>
 
-    <!--<div class="project-item">
+        <!--<div class="project-item">
         <h4>Task Management Application</h4>
         <ul>
             <li>Contributed to the development of a task management application for team collaboration.</li>
@@ -311,18 +334,18 @@
         </ul>
     </div>-->
 
-    <!--<h2>Certifications:</h2>
+        <!--<h2>Certifications:</h2>
     <ul>
         <li>Front-End Web Developer Nanodegree | Udacity</li>
         <li>C# Programming Certification | Microsoft Virtual Academy</li>
         <li>SQL Fundamentals Certification | Coursera</li>
     </ul>-->
 
-    <h2>Languages:</h2>
-    <ul class="languages-list">
-        <li>Tagalog</li>
-        <li>English</li>
-    </ul>
+        <h2>Languages:</h2>
+        <ul class="languages-list">
+            <li>Tagalog</li>
+            <li>English</li>
+        </ul>
 
         <h2>References:</h2>
         <p>Available upon request.</p>
@@ -333,14 +356,16 @@
         </a>
         <p>© 2024 Keyd Navi. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://web.facebook.com/friends/suggestions/?profile_id=100010616285782" class="social-icon" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://web.facebook.com/friends/suggestions/?profile_id=100010616285782" class="social-icon"
+                target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="404.html" class="social-icon" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="404.html" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/jetmanzanero" class="social-icon" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://github.com/jetmanzanero" class="social-icon" target="_blank"><i
+                    class="fa fa-github"></i></a>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    </body>
-    </html>
-    
+</body>
+
+</html>
